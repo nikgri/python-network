@@ -25,3 +25,6 @@ build
 
 #answer on task
 answer_task_*.py
+
+#pycharm
+.idea
