@@ -22,3 +22,6 @@ __pycache__/
 dist
 *.egg-info
 build
+
+#answer on task
+answer_task_*.py
