@@ -28,3 +28,13 @@ Next-Hop              {}
 Last update           {}
 Outbound Interface    {}
 """
+
+ospf_route = ospf_route.split()
+
+ip = ospf_route[0]
+ad_metric = ospf_route[1].replace("[", "").replace("]", "")
+next_hope = ospf_route[3].replace(",", "")
+last_update = ospf_route[4].replace(",", "")
+outbound_interface = ospf_route[5]
+
+print(template.format(ip, ad_metric, next_hope, last_update, outbound_interface))
