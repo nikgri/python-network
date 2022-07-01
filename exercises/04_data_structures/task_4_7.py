@@ -16,3 +16,10 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+mac = mac.replace(":", "")
+result = ""
+
+for symbol in mac:
+    result += (bin(int(symbol, 16))).replace("0b", "")
+
+print(result)
