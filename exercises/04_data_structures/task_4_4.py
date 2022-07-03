@@ -30,4 +30,5 @@ for vlan in vlans:
     if vlan not in result:
         result.append(vlan)
 
-print(result.sort())
+result = sorted(result)
+print(result)
